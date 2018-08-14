@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, TextInput, ScrollView } from 'react-native';
+import {ZendeskClient} from 'react-native-zendesk-chat-api'
 
 
 class ChatScreen extends Component {
@@ -21,10 +22,10 @@ class ChatScreen extends Component {
 
     componentDidMount() {
         this.client = new ZendeskClient({
-            accountKey: 'SEPvDUVGvKrsVylSMoHTHcNVJkhcW7ve',
+            accountKey: ' ',
             userInfo: {
                 name: 'iOS User',
-                email: 'andrew.grewell@provatahealth.com'
+                email: ' '
             },
             onConnect: this.onConnect,
             onDisconnect: this.onDisconnect
