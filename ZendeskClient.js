@@ -1,5 +1,5 @@
 import { NativeEventEmitter, NativeModules } from 'react-native';
-const { RNZendeskChatApi } = NativeModules;
+const RNZendeskChatApi = NativeModules.RNZDCChatAPIModule;
 
 
 class ZendeskClient {
